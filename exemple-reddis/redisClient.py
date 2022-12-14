@@ -1,6 +1,6 @@
 import redis
 
-pool = redis.ConnectionPool(host='localhost', port=4000, db = 0)
+pool = redis.ConnectionPool(host='localhost', port=6379, db = 0)
 client = redis.Redis(connection_pool=pool)
 
 finished = False
